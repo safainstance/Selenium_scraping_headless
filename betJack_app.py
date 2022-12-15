@@ -40,7 +40,7 @@ for event in events:
 
     for parent in parents:
         teams = parent.find_elements(By.XPATH, ".//*/span[contains(@class,'PlayerInfo__PlayerInfoNameCss')]")
-        time_match = parent.find_element(By.XPATH, ".//div[contains(@class,'InfoGroup__ExtraInfoCss')]/div")
+        time_match = parent.find_element(By.XPATH, "//div[contains(@class,'InfoGroup__ExtraInfoCss')]/div")
         time_match = time_match.text
         home = teams[0].text
         away = teams[1].text
